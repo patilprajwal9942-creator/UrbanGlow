@@ -1,0 +1,122 @@
+/* Page-specific styling for Admin Platform Analytics.
+   Shared stat card / section / table / badge / button / filter-bar /
+   loading / error / empty-state / pagination classes live in AdminLayout.css. */
+
+.admin-analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.admin-analytics-heading {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1E1B4B;
+}
+
+.admin-analytics-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #64748B;
+}
+
+.admin-analytics-group-title {
+  margin: 20px 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* CUSTOM DATE RANGE */
+
+.admin-analytics-custom-range {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 14px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(30, 27, 75, 0.05);
+}
+
+.admin-analytics-date-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: #64748B;
+  font-weight: 600;
+}
+
+/* REVENUE GROWTH CARD */
+
+.admin-analytics-growth-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(30, 27, 75, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+  max-width: 320px;
+}
+
+.admin-analytics-growth-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-analytics-growth-value.positive { color: #16A34A; }
+.admin-analytics-growth-value.negative { color: #DC2727; }
+.admin-analytics-growth-value.neutral { color: #64748B; }
+
+/* ==================================================
+   RESPONSIVE BREAKPOINTS
+================================================== */
+
+@media (max-width: 1200px) {
+  .admin-analytics-growth-card {
+    max-width: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .admin-analytics-custom-range {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-analytics-heading {
+    font-size: 20px;
+  }
+
+  .admin-analytics-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-analytics-header .admin-btn {
+    align-self: flex-start;
+  }
+
+  .admin-analytics-growth-value {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-analytics-growth-card {
+    padding: 16px;
+  }
+}

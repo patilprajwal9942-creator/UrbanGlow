@@ -1,0 +1,397 @@
+.support-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 40px 20px 60px;
+}
+
+.support-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.support-header {
+  margin-bottom: 30px;
+}
+
+.support-back-btn {
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 24px;
+  transition: color 0.2s ease;
+}
+
+.support-back-btn:hover {
+  color: #e91e63;
+}
+
+.support-title-section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.support-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: #fce7f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.support-title-section h1 {
+  margin: 0 0 6px;
+  color: #172554;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.support-title-section p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.support-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  padding: 34px;
+}
+
+.support-card-header {
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.support-card-header h2 {
+  margin: 0 0 7px;
+  color: #172554;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.support-card-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.support-form-group {
+  margin-bottom: 23px;
+}
+
+.support-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.support-form-group label span {
+  color: #dc2626;
+}
+
+.support-form-group label .optional {
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.support-form-group input,
+.support-form-group select,
+.support-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.support-form-group input,
+.support-form-group select {
+  height: 46px;
+  padding: 0 14px;
+}
+
+.support-form-group textarea {
+  padding: 13px 14px;
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.6;
+}
+
+.support-form-group input::placeholder,
+.support-form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.support-form-group input:focus,
+.support-form-group select:focus,
+.support-form-group textarea:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+}
+
+.support-form-group small {
+  display: block;
+  margin-top: 6px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* =========================
+   MESSAGES
+========================= */
+
+.support-message {
+  padding: 13px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.support-success {
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.support-error {
+  color: #991b1b;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.support-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.support-cancel-btn,
+.support-submit-btn {
+  height: 45px;
+  padding: 0 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.support-cancel-btn {
+  background: #ffffff;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.support-cancel-btn:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.support-submit-btn {
+  background: #e91e63;
+  color: #ffffff;
+  border: 1px solid #e91e63;
+}
+
+.support-submit-btn:hover:not(:disabled) {
+  background: #be185d;
+  border-color: #be185d;
+  transform: translateY(-1px);
+}
+
+.support-cancel-btn:disabled,
+.support-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================
+   INFO BOX
+========================= */
+
+.support-info {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 16px;
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.support-info-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.support-info h3 {
+  margin: 0 0 5px;
+  color: #164e63;
+  font-size: 16px;
+}
+
+.support-info p {
+  margin: 0 0 10px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.support-info button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.support-info button:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .support-page {
+    padding: 30px 16px 45px;
+  }
+
+  .support-title-section h1 {
+    font-size: 28px;
+  }
+
+  .support-card {
+    padding: 26px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .support-page {
+    padding: 22px 12px 35px;
+  }
+
+  .support-header {
+    margin-bottom: 22px;
+  }
+
+  .support-back-btn {
+    margin-bottom: 18px;
+  }
+
+  .support-title-section {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .support-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    font-size: 23px;
+  }
+
+  .support-title-section h1 {
+    font-size: 24px;
+  }
+
+  .support-title-section p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .support-card {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .support-card-header {
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  .support-card-header h2 {
+    font-size: 18px;
+  }
+
+  .support-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .support-cancel-btn,
+  .support-submit-btn {
+    width: 100%;
+  }
+
+  .support-info {
+    padding: 18px;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .support-form-group input,
+  .support-form-group select,
+  .support-form-group textarea,
+  .support-submit-btn,
+  .support-cancel-btn {
+    transition: none;
+  }
+}

@@ -1,0 +1,295 @@
+/* ================================
+   SALON ANALYTICS DASHBOARD
+============================== */
+
+.salon-analytics-page {
+  min-height: 100vh;
+  padding: 45px 7%;
+  box-sizing: border-box;
+  background: #FAFAF9;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.analytics-header {
+  margin-bottom: 35px;
+}
+
+.analytics-header h1 {
+  margin: 0;
+  color: #1E1B4B;
+  font-size: 32px;
+}
+
+.analytics-header .salon-name {
+  margin: 8px 0 0;
+  color: #D97706;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.analytics-section {
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 8px 25px rgba(30, 27, 75, 0.08);
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  margin: 0 0 20px;
+  color: #1E1B4B;
+  font-size: 20px;
+}
+
+.section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-header-row .section-title {
+  margin: 0;
+}
+
+/* STAT GRID */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.stat-card {
+  background: #FAFAF9;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1E1B4B;
+}
+
+.stat-card.income .stat-value { color: #16A34A; }
+
+.stat-card.pending .stat-value { color: #F59E0B; }
+
+.stat-card.cancelled .stat-value { color: #DC2727; }
+
+/* STATUS PILLS */
+
+.status-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.status-pill {
+  padding: 10px 18px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-pill.pending {
+  background: #FDF4CD;
+  color: #F59E0B;
+}
+
+.status-pill.confirmed {
+  background: #E0F2FE;
+  color: #2563EB;
+}
+
+.status-pill.completed {
+  background: #F0FDF4;
+  color: #16A34A;
+}
+
+.status-pill.cancelled {
+  background: #FECACA;
+  color: #DC2727;
+}
+
+/* CHART */
+
+.chart-wrapper {
+  width: 100%;
+}
+
+/* RECENT TRANSACTIONS */
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.transaction-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #FAFAF9;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.transaction-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.transaction-customer {
+  font-weight: 600;
+  color: #1E1B4B;
+}
+
+.transaction-service {
+  font-size: 13px;
+  color: #64748B;
+}
+
+.transaction-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-size: 13px;
+  color: #64748B;
+}
+
+.transaction-status {
+  color: #16A34A;
+  font-weight: 600;
+}
+
+.transaction-amount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1E1B4B;
+}
+
+.btn-view-all {
+  border: 1px solid #D97706;
+  background: white;
+  color: #D97706;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-view-all:hover {
+  background: #D97706;
+  color: white;
+}
+
+.btn-retry {
+  margin-top: 16px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #F59E0B;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.empty-message {
+  color: #64748B;
+  font-size: 15px;
+  margin: 0;
+}
+
+.loading-state,
+.error-state,
+.no-salon {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.loading-state h2,
+.error-state h2,
+.no-salon h2 {
+  color: #1E1B4B;
+  margin-bottom: 10px;
+}
+
+.no-salon p,
+.error-state p {
+  color: #64748B;
+}
+
+/* ================================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 700px) {
+  .salon-analytics-page {
+    padding: 30px 20px;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .analytics-section {
+    padding: 22px;
+  }
+}
+
+.owner-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 0;
+  margin-bottom: 24px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.owner-back-btn:hover {
+  color: #e91e63;
+  transform: translateX(-2px);
+}
+
+.owner-back-btn svg {
+  width: 19px;
+  height: 19px;
+}

@@ -1,0 +1,51 @@
+/* ===========================
+   Register Page Styles
+=========================== */
+
+/* Role Dropdown */
+
+.role-select {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+  color: #1E1B4B;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.role-select:focus {
+  border-color: #D97706;
+  box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.12);
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 768px) {
+
+  .role-select {
+    font-size: 14.5px;
+  }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 480px) {
+
+  .role-select {
+    height: 46px;
+    font-size: 14px;
+
+  }
+
+}

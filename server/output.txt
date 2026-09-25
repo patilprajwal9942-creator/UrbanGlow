@@ -1,0 +1,4 @@
+◇ injected env (12) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+Server running on port 5000
+✅ MongoDB Connected
+Database Name: UrbanGlow

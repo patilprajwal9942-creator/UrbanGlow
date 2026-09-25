@@ -1,0 +1,334 @@
+/* =================================
+   FEATURED SECTION
+=============================== */
+
+.featured {
+  width: 100%;
+
+  padding: 80px 8%;
+
+  box-sizing: border-box;
+
+  background: #FAFAF9;
+}
+
+
+/* =================================
+   HEADER
+=============================== */
+
+.featured-header {
+  text-align: center;
+
+  max-width: 650px;
+
+  margin: 0 auto 50px;
+}
+
+.featured-subtitle {
+  margin: 0 0 10px;
+
+  color: #1E1B4B;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.featured-header h2 {
+  margin: 0;
+
+  color: #1E1B4B;
+
+  font-size: 40px;
+  font-weight: 750;
+}
+
+.featured-header h2 span {
+  color: #D97706;
+}
+
+.featured-description {
+  margin-top: 14px;
+
+  color: #64748B;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =================================
+   SALON CONTAINER
+=============================== */
+
+.salon-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 28px;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+}
+
+
+/* =================================
+   SALON CARD
+=============================== */
+
+.salon-card {
+  overflow: hidden;
+
+  background: #FFFFFF;
+
+  border: 1px solid #E5E7EB;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 30px
+    rgba(30, 27, 75, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.salon-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 15px 35px
+    rgba(30, 27, 75, 0.12);
+}
+
+
+/* =================================
+   IMAGE
+=============================== */
+
+.salon-image-container {
+  width: 100%;
+
+  height: 220px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #F8FAFC;
+}
+
+.salon-image-container img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.salon-card:hover .salon-image-container img {
+  transform: scale(1.05);
+}
+
+
+/* =================================
+   BADGE
+=============================== */
+
+.salon-badge {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  background: #FAFAF9;
+
+  color: #1E1B4B;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 3px 12px
+    rgba(30, 27, 75, 0.10);
+}
+
+
+/* =================================
+   SALON INFO
+=============================== */
+
+.salon-info {
+  padding: 22px;
+}
+
+.salon-info h3 {
+  margin: 0 0 8px;
+
+  color: #1E1B4B;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.salon-owner {
+  margin: 0 0 16px;
+
+  color: #64748B;
+
+  font-size: 14px;
+}
+
+
+/* =================================
+   DETAILS
+=============================== */
+
+.salon-detail {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin-bottom: 9px;
+}
+
+.salon-detail span {
+  font-size: 15px;
+}
+
+.salon-detail p {
+  margin: 0;
+
+  color: #64748B;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+
+/* =================================
+   BOOK BUTTON
+=============================== */
+
+.salon-book-btn {
+  width: 100%;
+
+  height: 48px;
+
+  margin-top: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #D97706;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.salon-book-btn:hover {
+  background: #B45309;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px
+    rgba(217, 119, 6, 0.25);
+}
+
+.salon-book-btn span {
+  margin-left: 5px;
+
+  font-size: 18px;
+}
+
+
+/* =================================
+   NO SALONS
+=============================== */
+
+.no-salons {
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  background: #FAFAF9;
+
+  color: #64748B;
+}
+
+
+/* =================================
+   TABLET
+=============================== */
+
+@media (max-width: 1000px) {
+
+  .featured {
+    padding: 70px 5%;
+  }
+
+  .salon-container {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =================================
+   MOBILE
+=============================== */
+
+@media (max-width: 650px) {
+
+  .featured {
+    padding: 60px 20px;
+  }
+
+  .featured-header h2 {
+    font-size: 32px;
+  }
+
+  .salon-container {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .salon-image-container {
+    height: 210px;
+  }
+
+}

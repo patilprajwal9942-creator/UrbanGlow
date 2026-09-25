@@ -1,0 +1,11 @@
+{
+    "temperature":  0.2,
+    "messages":  [
+                     {
+                         "content":  "Say hello in one short sentence.",
+                         "role":  "user"
+                     }
+                 ],
+    "model":  "openai/gpt-oss-20b",
+    "max_tokens":  100
+}

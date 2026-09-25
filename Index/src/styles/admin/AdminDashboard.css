@@ -1,0 +1,350 @@
+/* ==================================================
+   ADMIN DASHBOARD
+================================================== */
+
+.admin-dashboard-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-dashboard-heading {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #12142b;
+}
+
+.admin-dashboard-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.admin-dashboard-group-title {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+
+/* ==================================================
+   BOOKING STATUS SUMMARY
+================================================== */
+
+.admin-status-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(140px, 1fr)
+  );
+  gap: 16px;
+}
+
+.admin-status-summary-card {
+  border-radius: 12px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+  text-align: center;
+}
+
+.admin-status-summary-value {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.admin-status-summary-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.admin-status-summary-card.pending {
+  background: #fef3c7;
+}
+
+.admin-status-summary-card.pending
+.admin-status-summary-value,
+.admin-status-summary-card.pending
+.admin-status-summary-label {
+  color: #d97706;
+}
+
+.admin-status-summary-card.confirmed {
+  background: #dbeafe;
+}
+
+.admin-status-summary-card.confirmed
+.admin-status-summary-value,
+.admin-status-summary-card.confirmed
+.admin-status-summary-label {
+  color: #2563eb;
+}
+
+.admin-status-summary-card.completed {
+  background: #dcfce7;
+}
+
+.admin-status-summary-card.completed
+.admin-status-summary-value,
+.admin-status-summary-card.completed
+.admin-status-summary-label {
+  color: #16a34a;
+}
+
+.admin-status-summary-card.cancelled {
+  background: #fee2e2;
+}
+
+.admin-status-summary-card.cancelled
+.admin-status-summary-value,
+.admin-status-summary-card.cancelled
+.admin-status-summary-label {
+  color: #dc2626;
+}
+
+
+/* ==================================================
+   RECENT USERS / RECENT SALONS
+================================================== */
+
+.admin-dashboard-split {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 24px;
+
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/*
+  IMPORTANT:
+  Do NOT use width: 100% here.
+  admin-section already has padding in AdminLayout.css.
+*/
+
+.admin-dashboard-split .admin-section {
+  min-width: 0;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* TABLE WRAPPER */
+
+.admin-dashboard-split .admin-table-wrapper {
+  width: 100%;
+  max-width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+
+/* TABLE */
+
+.admin-dashboard-split .admin-table {
+  width: 100%;
+  max-width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+}
+
+
+/* TABLE CELLS */
+
+.admin-dashboard-split .admin-table th,
+.admin-dashboard-split .admin-table td {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+/* ==================================================
+   RECENT USERS TABLE
+================================================== */
+
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table th:nth-child(1),
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table td:nth-child(1) {
+  width: 19%;
+}
+
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table th:nth-child(2),
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table td:nth-child(2) {
+  width: 27%;
+}
+
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table th:nth-child(3),
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table td:nth-child(3) {
+  width: 16%;
+}
+
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table th:nth-child(4),
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table td:nth-child(4) {
+  width: 16%;
+}
+
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table th:nth-child(5),
+.admin-dashboard-split
+.admin-section:first-child
+.admin-table td:nth-child(5) {
+  width: 22%;
+}
+
+
+/* ==================================================
+   RECENT SALONS TABLE
+================================================== */
+
+.admin-dashboard-split
+.admin-section:last-child
+.admin-table th:nth-child(1),
+.admin-dashboard-split
+.admin-section:last-child
+.admin-table td:nth-child(1) {
+  width: 30%;
+}
+
+.admin-dashboard-split
+.admin-section:last-child
+.admin-table th:nth-child(2),
+.admin-dashboard-split
+.admin-section:last-child
+.admin-table td:nth-child(2) {
+  width: 23%;
+}
+
+.admin-dashboard-split
+.admin-section:last-child
+.admin-table th:nth-child(3),
+.admin-dashboard-split
+.admin-section:last-child
+.admin-table td:nth-child(3) {
+  width: 20%;
+}
+
+.admin-dashboard-split
+.admin-section:last-child
+.admin-table th:nth-child(4),
+.admin-dashboard-split
+.admin-section:last-child
+.admin-table td:nth-child(4) {
+  width: 27%;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1200px) {
+
+  .admin-status-summary-grid {
+    grid-template-columns:
+      repeat(
+        auto-fit,
+        minmax(120px, 1fr)
+      );
+  }
+
+}
+
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+  .admin-dashboard-split {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-dashboard-split
+  .admin-table {
+    table-layout: auto;
+  }
+
+  .admin-dashboard-split
+  .admin-table th,
+  .admin-dashboard-split
+  .admin-table td {
+    white-space: nowrap;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .admin-dashboard-header {
+    justify-content: flex-start;
+  }
+
+  .admin-dashboard-heading {
+    font-size: 20px;
+  }
+
+  .admin-status-summary-value {
+    font-size: 22px;
+  }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  .admin-status-summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-status-summary-card {
+    padding: 14px;
+  }
+
+}

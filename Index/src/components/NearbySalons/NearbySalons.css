@@ -1,0 +1,280 @@
+/* =================================
+   NEARBY SALONS SECTION
+   (visual language matches FeaturedSalons.css)
+=============================== */
+
+.nearby-section {
+  width: 100%;
+  padding: 60px 8%;
+  box-sizing: border-box;
+  background: #FAFAF9;
+}
+
+/* =================================
+   HEADER
+=============================== */
+
+.nearby-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 36px;
+}
+
+.nearby-subtitle {
+  margin: 0 0 10px;
+  color: #1E1B4B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nearby-header h2 {
+  margin: 0;
+  color: #1E1B4B;
+  font-size: 36px;
+  font-weight: 750;
+}
+
+.nearby-header h2 span {
+  color: #D97706;
+}
+
+.nearby-description {
+  margin-top: 12px;
+  color: #64748B;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.nearby-find-btn {
+  margin-top: 22px;
+  height: 50px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 12px;
+  background: #D97706;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nearby-find-btn:hover:not(:disabled) {
+  background: #B45309;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(217, 119, 6, 0.25);
+}
+
+.nearby-find-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* =================================
+   ERROR STATE
+=============================== */
+
+.nearby-error {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+  border-radius: 15px;
+  background: #FAFAF9;
+  color: #DC2727;
+}
+
+.nearby-error p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.nearby-retry-btn {
+  height: 42px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 12px;
+  background: #D97706;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nearby-retry-btn:hover {
+  background: #B45309;
+}
+
+/* =================================
+   EMPTY STATE
+=============================== */
+
+.nearby-empty {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  background: #FFFFFF;
+  color: #64748B;
+}
+
+.nearby-empty h3 {
+  margin: 0 0 8px;
+  color: #1E1B4B;
+}
+
+/* =================================
+   NEARBY CONTAINER / GRID
+=============================== */
+
+.nearby-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* =================================
+   NEARBY CARD
+=============================== */
+
+.nearby-card {
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(30, 27, 75, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nearby-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(30, 27, 75, 0.12);
+}
+
+.nearby-image-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  background: #F8FAFC;
+}
+
+.nearby-image-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.nearby-card:hover .nearby-image-container img {
+  transform: scale(1.05);
+}
+
+.nearby-distance-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #FAFAF9;
+  color: #1E1B4B;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 3px 12px rgba(30, 27, 75, 0.10);
+  white-space: nowrap;
+}
+
+.nearby-info {
+  padding: 20px;
+}
+
+.nearby-info h3 {
+  margin: 0 0 10px;
+  color: #1E1B4B;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nearby-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 9px;
+}
+
+.nearby-detail span {
+  font-size: 15px;
+}
+
+.nearby-detail p {
+  margin: 0;
+  color: #64748B;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.nearby-view-btn {
+  width: 100%;
+  height: 46px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #FAFAF9;
+  color: #1E1B4B;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nearby-view-btn:hover {
+  background: #F1F5F9;
+  transform: translateY(-2px);
+}
+
+/* =================================
+   TABLET
+=============================== */
+
+@media (max-width: 1000px) {
+  .nearby-section {
+    padding: 50px 5%;
+  }
+
+  .nearby-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =================================
+   MOBILE
+=============================== */
+
+@media (max-width: 650px) {
+  .nearby-section {
+    padding: 40px 20px;
+  }
+
+  .nearby-header h2 {
+    font-size: 28px;
+  }
+
+  .nearby-find-btn {
+    width: 100%;
+  }
+
+  .nearby-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .nearby-image-container {
+    height: 190px;
+  }
+}

@@ -1,0 +1,158 @@
+/* Page-specific styling for Admin Booking Management.
+   Shared stat card / section / table / badge / button / filter-bar /
+   pagination / loading / error / empty-state / modal classes live in
+   AdminLayout.css. */
+
+.admin-bookings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.admin-bookings-heading {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1E1B4B;
+}
+
+.admin-bookings-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #64748B;
+}
+
+.admin-bookings-summary {
+  margin-bottom: 4px;
+}
+
+/* TOOLBAR */
+
+.admin-bookings-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.admin-bookings-salon-id-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6x;
+  font-size: 12px;
+  color: #64748B;
+  font-weight: 600;
+}
+
+/* CUSTOMER CELL */
+
+.admin-bookings-customer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin-bookings-email {
+  font-size: 12px;
+  color: #64748B;
+}
+
+/* APPOINTMENT CELL */
+
+.admin-bookings-appointment {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* DETAILS MODAL */
+
+.admin-bookings-modal {
+  max-width: 600px;
+}
+
+.admin-bookings-detail-section {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.admin-bookings-detail-section:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.admin-bookings-detail-title {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1E1B4B;
+}
+
+.admin-bookings-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+.admin-bookings-detail-grid p {
+  margin: 0;
+  font-size: 13px;
+  color: #64748B;
+  word-break: break-word;
+}
+
+.admin-bookings-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* ==================================================
+   RESPONSIVE BREAKPOINTS
+================================================== */
+
+@media (max-width: 1200px) {
+  .admin-bookings-detail-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .admin-bookings-toolbar {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-bookings-heading {
+    font-size: 20px;
+  }
+
+  .admin-bookings-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-bookings-header .admin-btn {
+    align-self: flex-start;
+  }
+
+  .admin-bookings-modal {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-bookings-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-bookings-modal-actions .admin-btn {
+    width: 100%;
+  }
+}

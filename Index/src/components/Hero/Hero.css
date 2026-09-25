@@ -1,0 +1,225 @@
+.hero {
+  width: 100%;
+
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 8%;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      135deg,
+      #F8FAFC 0%,
+      #E11D48 50%,
+      #fff 100%
+    );
+}
+
+
+.hero-content {
+  max-width: 720px;
+}
+
+
+.hero-label {
+  margin: 0 0 16px;
+
+  color: #0F766E;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.hero h1 {
+  margin: 0;
+
+  color: #242424;
+
+  font-size: 62px;
+
+  line-height: 1.08;
+
+  letter-spacing: -2px;
+}
+
+
+.hero h1 span {
+  color: #0F766E;
+}
+
+
+.hero-description {
+  max-width: 620px;
+
+  margin: 22px 0 0;
+
+  color: #666;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+
+/* SEARCH */
+
+.hero-search {
+  width: 100%;
+
+  max-width: 570px;
+
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 30px;
+
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  background: white;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 8px 25px
+    rgba(0, 0, 0, 0.07);
+}
+
+
+.search-icon {
+  font-size: 19px;
+}
+
+
+.hero-search input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 16px;
+
+  color: #333;
+}
+
+
+.hero-search input::placeholder {
+  color: #aaa;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+
+  gap: 14px;
+
+  margin-top: 22px;
+}
+
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  height: 50px;
+
+  padding: 0 26px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+.hero-primary-btn {
+  border: none;
+
+  background: #0F766E;
+
+  color: white;
+
+  box-shadow:
+    0 7px 18px
+    rgba(255, 79, 112, 0.25);
+}
+
+
+.hero-primary-btn:hover {
+  background: #115E59;
+
+  transform: translateY(-2px);
+}
+
+
+.hero-primary-btn span {
+  margin-left: 10px;
+
+  font-size: 18px;
+}
+
+
+.hero-secondary-btn {
+  background: white;
+
+  border: 1.5px solid #0F766E;
+
+  color: #0F766E;
+}
+
+
+.hero-secondary-btn:hover {
+  background: #FFE4E6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+
+    padding: 65px 25px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    width: 100%;
+  }
+}
