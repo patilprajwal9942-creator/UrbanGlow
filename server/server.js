@@ -132,12 +132,15 @@ app.use(limiter);
 // CORS
 // ==========================================
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://urban-glow-ioi1lkmaa-patilprajwal9942-creator.vercel.app",
+  "https://urban-glow-zeta.vercel.app",
+];
+
 app.use(
   cors({
-    origin:
-      process.env.CLIENT_URL ||
-      "http://localhost:5173",
-
+    origin: allowedOrigins,
     credentials: true,
   })
 );
