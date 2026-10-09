@@ -285,7 +285,7 @@ function Login() {
         </h1>
 
         <h2>
-          Welcome Back 👋
+          Welcome Back 
         </h2>
 
         <p className="auth-subtitle">
